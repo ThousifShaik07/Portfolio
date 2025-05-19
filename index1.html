@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thousif Shaik | Python Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Falcon.jpg" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="theme-dark">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full py-4 px-6 z-50 backdrop-blur-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold tracking-wider" style="color: var(--primary);">Thousif</a>
+      
+      <nav class="hidden md:flex space-x-8">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      
+      <button id="theme-toggle" class="theme-toggle text-2xl focus:outline-none">
+        🌙
+      </button>
+      
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="md:hidden text-2xl">
+        ☰
+      </button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-black/90 py-4 px-6 backdrop-blur-md">
+      <div class="flex flex-col space-y-4">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-6">
+      <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+        <div class="hero-text-container md:w-1/2 text-center md:text-left mb-12 md:mb-0 md:ml-16">
+          <h1 class="hero-font hero-name text-7xl md:text-8xl lg:text-9xl font-black uppercase mb-4" style="color: var(--primary);">
+            THOUSIF<br>SHAIK
+          </h1>
+          <div class="typing-container text-xl md:text-2xl mb-8 h-8" style="margin-left: 80px;">
+            <span>I'm</span>
+            <span class="typing-text"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+          <div class="hero-button">
+            <a href="My_Resume.pdf" download class="btn-primary px-8 py-3 rounded-full font-bold text-lg inline-block">
+              Download CV
+            </a>
+          </div>
+        </div>
+        
+        <div class="md:w-1/2 flex justify-center">
+          <div class="profile-image w-64 h-96 rounded-[100px] overflow-hidden animate-float" 
+               style="background-image: url('Dev.jpg'); 
+                      background-size: cover; background-position: center; width: 20rem; height: 30rem;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6">
+      <div class="container mx-auto">
+        <h2 class="section-title text-4xl font-bold mb-16 text-center">
+          About Me
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="card p-8 rounded-xl">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                <img src="mini.png" 
+                     alt="Profile" class="w-full h-full object-cover">
+              </div>
+              <div>
+                <h3 class="text-xl font-bold">Open to Work</h3>
+                <p class="text-secondary">Python Full-stack Developer</p>
+              </div>
+            </div>
+            
+            <h3 class="text-2xl font-bold mb-4">Design Journey</h3>
+            <p class="mb-6">
+              Passionate and results-oriented Python UI/UX Web Developer dedicated to crafting intuitive and visually engaging digital experiences. Combining a strong foundation in Python for robust backend development with a keen eye for user-centered design principles, I strive to build seamless and effective web applications.
+            </p>
+            
+            <h3 class="text-2xl font-bold mb-4">Experience</h3>
+            <div class="space-y-6">
+              <div>
+                <h4 class="font-bold">Innovate Inc.</h4>
+                <p class="text-secondary">Python Developer • 2025</p>
+              </div>
+              <div>
+                <h4 class="font-bold">CSEDGE</h4>
+                <p class="text-secondary">Web Designer and Developer Intern • 2024</p>
+              </div>
+              <div>
+                <h4 class="font-bold">Brainovision Solution India Pvt. Ltd</h4>
+                <p class="text-secondary">Web Development Intern • 2022</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card p-8 rounded-xl">
+            <h3 class="text-2xl font-bold mb-6">Skill Set</h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="flex flex-col items-center p-4 border border-border-color rounded-lg hover:bg-secondary/50 transition-colors">
+                <i class="fab fa-python skill-icon mb-2" style="color: #3776AB;"></i>
+                <span>Python</span>
+              </div>
+              <div class="flex flex-col items-center p-4 border border-border-color rounded-lg hover:bg-secondary/50 transition-colors">
+                <i class="fab fa-html5 skill-icon mb-2" style="color: #E34F26;"></i>
+                <span>HTML</span>
+              </div>
+              <div class="flex flex-col items-center p-4 border border-border-color rounded-lg hover:bg-secondary/50 transition-colors">
+                <i class="fab fa-css3-alt skill-icon mb-2" style="color: #1572B6;"></i>
+                <span>CSS</span>
+              </div>
+              <div class="flex flex-col items-center p-4 border border-border-color rounded-lg hover:bg-secondary/50 transition-colors">
+                <i class="fab fa-js skill-icon mb-2" style="color: #F7DF1E;"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="flex flex-col items-center p-4 border border-border-color rounded-lg hover:bg-secondary/50 transition-colors">
+                <i class="fas fa-database skill-icon mb-2" style="color: #4479A1;"></i>
+                <span>SQL</span>
+              </div>
+              <div class="flex flex-col items-center p-4 border border-border-color rounded-lg hover:bg-secondary/50 transition-colors">
+                <i class="fab fa-figma skill-icon mb-2" style="color: #F24E1E;"></i>
+                <span>Figma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6 bg-secondary">
+      <div class="container mx-auto max-w-6xl">
+        <h2 class="section-title text-4xl font-bold mb-16 text-center">
+          Services
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="service-card">
+            <div class="card h-full p-8 rounded-xl">
+              <div class="service-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Python Development</h3>
+              <p class="mb-4">
+                Robust backend solutions built with Python, Django, and Flask for scalable web applications and APIs.
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-center">
+                  <span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                  Django/Flask Development
+                </li>
+                <li class="flex items-center">
+                  <span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                  REST API Design
+                </li>
+                <li class="flex items-center">
+                  <span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                  Database Integration
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="service-card">
+            <div class="card h-full p-8 rounded-xl">
+              <div class="service-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Front-end Development</h3>
+              <p class="mb-4">
+                Responsive and interactive user interfaces built with modern JavaScript frameworks and CSS.
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-center">
+                  <span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                  React/Vue Development
+                </li>
+                <li class="flex items-center">
+                  <span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                  Responsive Design
+                </li>
+                <li class="flex items-center">
+                  <span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                  Performance Optimization
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="service-card">
+            <div class="card h-full p-8 rounded-xl">
+              <div class="service-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
+              <p class="mb-4">
+                User-centered design solutions that combine aesthetics with functionality for optimal user experience.
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-center">
+                  <span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                  Wireframing & Prototyping
+                </li>
+                <li class="flex items-center">
+                  <span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                  User Research
+                </li>
+                <li class="flex items-center">
+                  <span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                  Interaction Design
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6">
+      <div class="container mx-auto max-w-6xl">
+        <h2 class="section-title text-4xl font-bold mb-16 text-center">
+          My Projects
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="project-card">
+            <div class="card overflow-hidden rounded-xl h-full">
+              <div class="project-image" style="background-image: url('https://private-user-images.githubusercontent.com/133948652/440186618-37bd9eb2-8a7e-4f8c-88ae-8e8dfaaffe16.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDc2ODUyMjUsIm5iZiI6MTc0NzY4NDkyNSwicGF0aCI6Ii8xMzM5NDg2NTIvNDQwMTg2NjE4LTM3YmQ5ZWIyLThhN2UtNGY4Yy04OGFlLThlOGRmYWFmZmUxNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxOVQyMDAyMDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNjUxN2VkZTQ0YTk1NmU3NTkwZWE3YmY5ODVkMjBkODRmZTFiMDM3ZTFlZjg5MTE1NzljMzcxNjkzMmU5ODNmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.xzZXV5htxpPybknnPTQGodf0M4PXf6EfLFKe90_DGHk');">
+                <div class="h-full flex items-center justify-center text-white text-2xl font-bold"></div>
+              </div>
+              <div class="p-6">
+                <a href="https://github.com/ThousifShaik07/Travel-Website" target="_blank">
+                    <h3 class="text-xl font-bold mb-2">Full-stack Travel Partner</h3>
+                <p class="mb-4">Full-stack Travel platform built with Django and React, featuring payment integration and inventory management.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">HTML</span>
+                  <span class="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">CSS</span>
+                  <span class="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">JavaScript</span>
+                </div>
+              </div>
+            </div>
+        </a>
+                
+          </div>
+          
+          <div class="project-card">
+            <div class="card overflow-hidden rounded-xl h-full">
+              <div class="project-image" style="background-image: url('https://private-user-images.githubusercontent.com/133948652/445303552-ae41fcfc-70e6-429c-bb05-b16338b157a7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDc2ODU5MzUsIm5iZiI6MTc0NzY4NTYzNSwicGF0aCI6Ii8xMzM5NDg2NTIvNDQ1MzAzNTUyLWFlNDFmY2ZjLTcwZTYtNDI5Yy1iYjA1LWIxNjMzOGIxNTdhNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxOVQyMDEzNTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iZDU5Nzk2YmRhYThkZjg1MTg1MDMyN2JlNjFmNGJjZmI0NzhkNjZiZTQxNTQxZTJiYmZhYzE4Njk1NzhkOTk2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.EuE1m4Z75cnFg7RMJutYKAJRyLOV_VpsBEokmzcYJTI');">
+                <div class="h-full flex items-center justify-center text-white text-2xl font-bold" ></div>
+              </div>
+              <div class="p-6">
+                <a href="https://github.com/ThousifShaik07/Deepfake-on-tweets/tree/main" target="_blank">
+                <h3 class="text-xl font-bold mb-2">ML & DL Project</h3>
+                <p class="mb-4">Developed an ML model using Python and NLP to detect AI-generated (fake) tweets on Twitter (X) by classifying them as human- or machine-written.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Python</span>
+                  <span class="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">JavaScript</span>
+                  <span class="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">D3.js</span>
+                </div>
+              </div>
+            </div>
+            </a>
+
+          </div>
+          
+          <div class="project-card">
+            <div class="card overflow-hidden rounded-xl h-full">
+              <div class="project-image" style="background-image: url('https://private-user-images.githubusercontent.com/133948652/445309913-8ca40450-0f94-49e5-a9a7-32bb8ce8b7cd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDc2ODc0MTgsIm5iZiI6MTc0NzY4NzExOCwicGF0aCI6Ii8xMzM5NDg2NTIvNDQ1MzA5OTEzLThjYTQwNDUwLTBmOTQtNDllNS1hOWE3LTMyYmI4Y2U4YjdjZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxOVQyMDM4MzhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ODJlZWJlYTAwMmM2MTE5YTQyNDkwMzZmZDU4ZDVjMzIwNzY3NWM0ZGIzMTdkZDAzMDI2NmU0NjI0ZGQ4YjI5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.j43j-s7IFdVSjC5bcnlDAfSotrf3axZuN0GEyVsn1Rg');">
+                <div class="h-full flex items-center justify-center text-white text-2xl font-bold"></div>
+              </div>
+              <div class="p-6">
+                <a href="https://thousifshaik07.github.io/NFC-WEBPAGE/" target="_blank">
+                <h3 class="text-xl font-bold mb-2">NFC-WEBPAGE</h3>
+                <p class="mb-4">A web app for creating and customizing digital avatars for the metaverse, with the option to mint them as NFTs.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">HTML</span>
+                  <span class="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">CSS</span>
+                  <span class="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">JavaScript</span>
+                </div>
+              </div>
+            </div>
+                </a>
+          </div>
+          
+          <div class="project-card">
+            <div class="card overflow-hidden rounded-xl h-full">
+              <div class="project-image" style="background-image: url('https://private-user-images.githubusercontent.com/133948652/445313254-d09f9e7a-3e62-4726-a793-5971e043c4ad.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDc2ODgwODIsIm5iZiI6MTc0NzY4Nzc4MiwicGF0aCI6Ii8xMzM5NDg2NTIvNDQ1MzEzMjU0LWQwOWY5ZTdhLTNlNjItNDcyNi1hNzkzLTU5NzFlMDQzYzRhZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxOVQyMDQ5NDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lZGRjZmE5YTcxZWI1YjM1OTM5NDA5NWZiODIyZDAwNTk0ZTRjMmZkMWFlMWI5ODU5ZDQ0OWZjMTliMDFjYjBhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.-UATp4lrWdvvcN9orm-gNn7zVz5nnXuBFG_PFcJA2Ow');">
+                <div class="h-full flex items-center justify-center text-white text-2xl font-bold"></div>
+              </div>
+              <div class="p-6">
+                <a href="https://thousifshaik07.github.io/3D-homepage/" target="_blank">
+                    <h3 class="text-xl font-bold mb-2">TCODE 3D</h3>
+                <p class="mb-4">Created a responsive, animated landing page with AOS effects and 3D integration using Spline.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">HTML</span>
+                  <span class="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">CSS</span>
+                  <span class="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Spline</span>
+                </a>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6">
+      <div class="container mx-auto max-w-4xl">
+        <h2 class="section-title text-4xl font-bold mb-16 text-center">
+          Get In Touch
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-2xl font-bold mb-6">Ready to Start Your Project?</h3>
+            <p class="mb-8">
+              I'm currently available for freelance work and full-time positions. If you have a project that needs creative expertise or just want to say hello, feel free to reach out!
+            </p>
+            
+            <div class="space-y-4">
+              <a href="mailto:hello@thousif.com" class="flex items-center p-4 bg-secondary rounded-lg hover:bg-secondary/70 transition-colors">
+                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+                </div>
+                <div>
+                  <img src="preview.png" alt="" srcset="">
+                </div>
+              </a>
+              
+ 
+            </div>
+          </div>
+          
+          <form>
+            <div class="space-y-6">
+              <div>
+                <label for="name" class="block mb-2">Your Name</label>
+                <input type="text" id="name" class="form-input w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Enter your name">
+              </div>
+              <div>
+                <label for="email" class="block mb-2">Email Address</label>
+                <input type="email" id="email" class="form-input w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Enter your email">
+              </div>
+              <div>
+                <label for="message" class="block mb-2">Your Message</label>
+                <textarea id="message" rows="4" class="form-input w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Enter your message"></textarea>
+              </div>
+              <button type="submit" class="btn-primary px-6 py-3 rounded-lg font-bold w-full">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6">
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <h2 class="text-2xl font-bold mb-2">THOUSIF SHAIK</h2>
+          <p class="text-secondary">Python Developer & UI/UX Designer</p>
+        </div>
+        
+        <div class="flex space-x-6 mb-6 md:mb-0">
+          <a href="https://www.linkedin.com/in/thousifshaik07/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/ThousifShaik07" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" class="social-icon">
+
+          </a>
+          <a href="#" class="social-icon">
+            
+          </a>
+        </div>
+        
+        <div class="text-center md:text-right">
+          <p class="text-sm text-secondary">© 2025 Thousif Shaik. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Typing Animation
+    document.addEventListener('DOMContentLoaded', function() {
+      const typingText = document.querySelector('.typing-text');
+      const cursor = document.querySelector('.typing-cursor');
+      const strings = ["Python Developer", "Web Developer", "UI/UX Designer"];
+      let stringIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      let typingSpeed = 100;
+      let deleteSpeed = 50;
+      let pauseBetweenWords = 1500;
+      let pauseBeforeTyping = 500;
+      
+      function type() {
+        const currentString = strings[stringIndex];
+        
+        if (isDeleting) {
+          typingText.textContent = currentString.substring(0, charIndex - 1);
+          charIndex--;
+        } else {
+          typingText.textContent = currentString.substring(0, charIndex + 1);
+          charIndex++;
+        }
+        
+        if (!isDeleting && charIndex === currentString.length) {
+          isDeleting = true;
+          setTimeout(type, pauseBetweenWords);
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          stringIndex = (stringIndex + 1) % strings.length;
+          setTimeout(type, pauseBeforeTyping);
+        } else {
+          setTimeout(type, isDeleting ? deleteSpeed : typingSpeed);
+        }
+      }
+      
+      // Start the typing animation
+      setTimeout(type, 1000);
+      
+      // Theme Toggle
+      const themeToggle = document.getElementById('theme-toggle');
+      const body = document.body;
+      
+      // Check for saved theme preference or use preferred color scheme
+      const savedTheme = localStorage.getItem('theme') || 
+                        (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      
+      // Apply the saved theme
+      if (savedTheme === 'light') {
+        body.classList.remove('theme-dark');
+        body.classList.add('theme-light');
+        themeToggle.textContent = '☀️';
+      }
+      
+      themeToggle.addEventListener('click', () => {
+        const isDark = body.classList.contains('theme-dark');
+        
+        if (isDark) {
+          body.classList.remove('theme-dark');
+          body.classList.add('theme-light');
+          themeToggle.textContent = '☀️';
+          localStorage.setItem('theme', 'light');
+        } else {
+          body.classList.remove('theme-light');
+          body.classList.add('theme-dark');
+          themeToggle.textContent = '🌙';
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+      
+      // Mobile Menu Toggle
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+            
+            // Close mobile menu if open
+            mobileMenu.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
