@@ -563,6 +563,7 @@ footer {
   }
 
   .hero-name {
+    margin: 0 5rem;
     font-size: 3rem;
     text-align: center;
   }
