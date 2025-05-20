@@ -356,15 +356,35 @@ footer {
   transform: rotate(180deg);
 }
 
-/* Profile Image Animation */
-.animate-float {
-  animation: float 6s ease-in-out infinite, floatUp 1s ease-out 0.4s both;
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
-/* Floating Elements */
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* For single smooth floating */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* For multiple elements with entry + float */
 .floating-element {
   opacity: 0;
-  animation: floatUp 1s ease-out forwards, float 6s ease-in-out 2s infinite;
+  animation: floatUp 1s ease-out forwards, float 6s ease-in-out infinite;
 }
 
 .floating-element:nth-child(1) {
@@ -374,6 +394,7 @@ footer {
 .floating-element:nth-child(2) {
   animation-delay: 0.6s, 2.6s;
 }
+
 
 /* Background Shapes */
 .bg-shape {
