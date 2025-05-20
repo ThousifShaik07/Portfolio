@@ -422,10 +422,12 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+@media (max-width: 768px) {
   .hero-text-container {
     margin-left: 5%;
   }
-    .typing-container {
+  
+  .typing-container {
     margin-left: 30px;
   }
   
@@ -435,7 +437,8 @@ footer {
     margin-right: 5%;
   }
   
-  .hero-subtitle, .hero-button {
+  .hero-subtitle, 
+  .hero-button {
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -448,20 +451,22 @@ footer {
   .section-title::after {
     width: 30%;
   }
+    h2.text-2xl.font-bold.mb-2 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 640px) {
   .hero-name {
     font-size: 3rem;
   }
-
-    .typing-container {
-    margin-left: 20px;
-  }
   
-  /* Adjust animation delays for mobile */
   .hero-section {
     animation-delay: 0.1s;
+  }
+
+  .typing-container {
+    margin-left: 20px;
   }
   
   .about-section {
@@ -479,11 +484,11 @@ footer {
   .contact-section {
     animation-delay: 0.9s;
   }
-    h2.text-2xl.font-bold.mb-2 {
+  
+  h2.text-2xl.font-bold.mb-2 {
     text-align: center;
   }
 }
-
 /* Button Styles with Combined Animation */
 .btn-primary {
   position: relative;
