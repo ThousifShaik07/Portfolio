@@ -232,7 +232,7 @@ header {
 }
 
 .service-card:hover .service-icon {
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 /* Project Cards */
