@@ -451,6 +451,10 @@ footer {
   .hero-name {
     font-size: 3rem;
   }
+
+    .typing-container {
+    margin-left: 30px;
+  }
   
   /* Adjust animation delays for mobile */
   .hero-section {
