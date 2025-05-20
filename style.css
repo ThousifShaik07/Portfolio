@@ -241,7 +241,7 @@ header {
 
 /* Typing Animation */
 .typing-container {
-  margin-left: 6rem;
+  margin-left: 4rem;
   display: inline-block;
   position: relative;
   height: 1.5em;
@@ -557,16 +557,30 @@ footer {
 }
 
 @media (max-width: 640px) {
+  #theme-toggle.theme-toggle {
+    position: absolute; /* Removes from normal flow */
+    left: 50%; /* Centers horizontally */
+  }
+
   .hero-name {
     font-size: 3rem;
+    text-align: center;
   }
-  
+
   .hero-section {
     animation-delay: 0.1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .typing-container {
-    margin-left: 20px;
+    margin-top: 1rem;
+    margin-left: auto; /* Center instead of fixed 20px */
+    margin-right: auto;
+    text-align: center;
+    width: 100%; /* Prevents overflow */
   }
   
   .about-section {
