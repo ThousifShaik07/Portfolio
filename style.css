@@ -492,6 +492,13 @@ footer {
   animation-delay: 0.6s, 2.8s;
 }
 
+  .space-y-4 img {
+    display: block; /* Makes the image a block element */
+    margin-left:-2rem;/* Automatic right margin */
+    max-width: 100%; /* Ensures image doesn't overflow */
+    height: auto; /* Maintains aspect ratio */
+  }
+
 
 /* Background Shapes */
 .bg-shape {
