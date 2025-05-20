@@ -356,19 +356,20 @@ footer {
   transform: rotate(180deg);
 }
 
+/*Floating element*/
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-12px);
+    transform: translateY(-24px); /* More float */
   }
 }
 
 @keyframes floatUp {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(40px); /* More visible entry */
   }
   100% {
     opacity: 1;
@@ -376,25 +377,24 @@ footer {
   }
 }
 
-/* For single smooth floating */
+/* Single element smooth float */
 .animate-float {
-  animation: float 6s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
 }
 
-/* For multiple elements with entry + float */
+/* Multiple elements with entry + float */
 .floating-element {
   opacity: 0;
-  animation: floatUp 1s ease-out forwards, float 6s ease-in-out infinite;
+  animation: floatUp 1.2s ease-out forwards, float 5s ease-in-out infinite;
 }
 
 .floating-element:nth-child(1) {
-  animation-delay: 0.4s, 2.4s;
+  animation-delay: 0.3s, 2.5s;
 }
 
 .floating-element:nth-child(2) {
-  animation-delay: 0.6s, 2.6s;
+  animation-delay: 0.6s, 2.8s;
 }
-
 
 /* Background Shapes */
 .bg-shape {
