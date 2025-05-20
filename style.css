@@ -94,6 +94,7 @@ body {
 
 /* Typing Animation */
 .typing-container {
+  margin-left: 4rem;
   display: inline-block;
   position: relative;
   height: 1.5em;
@@ -449,6 +450,9 @@ footer {
   
   .contact-section {
     animation-delay: 0.9s;
+  }
+    h2.text-2xl.font-bold.mb-2 {
+    text-align: center;
   }
 }
 
