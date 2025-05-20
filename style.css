@@ -595,6 +595,13 @@ footer {
   .projects-section {
     animation-delay: 0.7s;
   }
+
+  .space-y-4 img {
+    display: block; /* Makes the image a block element */
+    margin-left:-1rem;/* Automatic right margin */
+    max-width: 100%; /* Ensures image doesn't overflow */
+    height: auto; /* Maintains aspect ratio */
+  }
   
   .contact-section {
     animation-delay: 0.9s;
