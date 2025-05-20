@@ -422,13 +422,12 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-@media (max-width: 768px) {
   .hero-text-container {
     margin-left: 5%;
   }
   
   .typing-container {
-    margin-left: 30px;
+    margin-left: 3rem;
   }
   
   .hero-name {
@@ -466,7 +465,7 @@ footer {
   }
 
   .typing-container {
-    margin-left: 20px;
+    margin-left: 3rem;
   }
   
   .about-section {
